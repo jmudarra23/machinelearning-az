@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 10 17:29:16 2022
+Created on Tue May 10 18:44:43 2022
 
 @author: mudar
 """
 
-# Regresion Logistica
+# Plantilla de Clasificacion
 
 # Como importar las librerias
 import numpy as np
@@ -33,10 +33,8 @@ X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 
 
-# Ajustar el modelo de Regresion Logistica en el Conjunto de Entrenamiento
-from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(random_state = 0)
-classifier.fit(X_train, y_train)
+# Ajustar el clasificador en el Conjunto de Entrenamiento
+# Crear el modelo de clasificacion aqui
 
 
 # Prediccion de los resultados con el Conjunto de Testing
